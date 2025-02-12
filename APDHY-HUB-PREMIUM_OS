@@ -1657,14 +1657,14 @@ local Window = MakeWindow({
       
 ------ Tab
      local Tab1o = MakeTab({Name = "MAIN"})
-     local Tab2o = MakeTab({Name = "a"})
-     local Tab3o = MakeTab({Name = "a"})
+     local Tab2o = MakeTab({Name = "FARM LEVER"})
+     local Tab9o = MakeTab({Name = "CÀI ĐẶT BỔ SUNG"})
      
      
 -------TOGGLE 
 
-     Toggle = AddToggle(Tab1o, {
-      Name = "a",
+     Toggle = AddToggle(Tab2o, {
+      Name = "FARM",
       Default = false,
       Callback = function()
      end
@@ -1683,32 +1683,33 @@ local Window = MakeWindow({
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
   end
-  })   AddButton(Tab1o, {
-     Name = "2",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-  end
-  })   AddButton(Tab1o, {
-     Name = "3",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-  end
-  })   AddButton(Tab1o, {
-     Name = "4",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-  end
-  })   AddButton(Tab1o, {
-     Name = "FIX LAG",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-  end
-  })
+  })   
 ----- Dropdown 
 
-  Dropdown = AddDropdown(Tab1o, {
-     Name = "a",
-     Options = {"Test 1", "Test 2", "Test 3", "Test 4"},
+  Dropdown = AddDropdown(Tab2o, {
+     Name = "Tốc Đáng",
+     Options = {"0.25 (cực dẻ bị ban)","0.5","0.75","0.9","1.5", "2.0", "3.0", "3.5"},
+     Default = "Melee",
+     Callback = function()
+     end
+   })
+  Dropdown = AddDropdown(Tab2o, {
+     Name = "Tốc Đáng",
+     Options = {"0.25 (cực dẻ bị ban)","0.5","0.75","0.9","1.5", "2.0", "3.0", "3.5"},
+     Default = "Melee",
+     Callback = function()
+     end
+   })
+  Dropdown = AddDropdown(Tab2o, {
+     Name = "Tốc Đáng",
+     Options = {"0.25 (cực dẻ bị ban)","0.5","0.75","0.9","1.5", "2.0", "3.0", "3.5"},
+     Default = "Melee",
+     Callback = function()
+     end
+   })
+  Dropdown = AddDropdown(Tab2o, {
+     Name = "Tốc Đáng",
+     Options = {"0.25 (cực dẻ bị ban)","0.5","0.75","0.9","1.5", "2.0", "3.0", "3.5"},
      Default = "Melee",
      Callback = function()
      end
