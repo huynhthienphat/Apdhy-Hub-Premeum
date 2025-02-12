@@ -1620,8 +1620,7 @@ function MakeWindow(Configs)
         task.wait(5)
         JoinButton.Text = "Join"
         JoinButton.BackgroundColor3 = Color3.fromRGB(50, 200, 50)
-        JoinButton.TextColor3 = Color3.fromRGB(220, 220, 220)
-
+        })JoinButton.TextColor3 = Color3.fromRGB(220, 220, 220)
 
        local Window = MakeWindow({
          Hub = {
