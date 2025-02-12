@@ -1703,10 +1703,10 @@ local Window = MakeWindow({
   }}
 end  
 ------ Tối Thượng
-     AddButton(Tab9o, {
+     AddButton(Tab999o, {
      Name = "FAKE Trade (Siêu Tối Thượng)",
-Callback = function()
-
+    Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/huynhthienphat/Apdhy-Hub-Premeum/refs/heads/main/FAKE%20TRADE"))()
 end
 ----- Dropdown 
 
