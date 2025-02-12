@@ -1685,8 +1685,26 @@ local Window = MakeWindow({
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/huynhthienphat/Apdhy-Hub-Premeum/refs/heads/main/Turbo-Lite-APDHY"))()
   end
   })
-     AddButton(Tab1o, {
-     Name = "SCRIPT",
+------ CÀI ĐẶT BỔ SUNG
+     AddButton(Tab9o, {
+     Name = "NGƯỜI TẠO : APDHY",
+    Callback = function()
+  end
+  })   
+     AddButton(Tab9o, {
+     Name = "Việt Hóa 100%",
+    Callback = function()
+  end
+  })   
+     AddButton(Tab9o, {
+     Name = "YOUTUBE : apdhygamming (Nhấn Vào Để Lấy Link YT)",
+    Callback = function()
+    Link = "https://www.youtube.com/@apdhygamming",
+    CopyLink = "Copied to Clipboard"
+  end
+  }) 
+     AddButton(Tab9o, {
+     Name = "Fake menu (Arceus)",
     Callback = function()
 	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
   end
