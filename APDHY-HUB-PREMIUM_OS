@@ -1626,6 +1626,7 @@ function MakeWindow(Configs)
   end
   return Menu
 end
+
 local Window = MakeWindow({
          Hub = {
          Title = "APDHY HUB PREMIUM (VIP) | SDT:0845670409",
@@ -1640,7 +1641,7 @@ local Window = MakeWindow({
         Notifi = {
         Notifications = true,
         CorrectKey = "Running the Script",
-       Incorrectkey = "Key SAI ",
+       Incorrectkey = "Key SAI",
        CopyKeyLink = "Copied to Clipboard"
       }
     }
@@ -1699,15 +1700,8 @@ local Window = MakeWindow({
      AddButton(Tab9o, {
      Name = "YOUTUBE : https://www.youtube.com/@apdhygamming",
     Callback = function()
-  }
-end
-  }) 
-     AddButton(Tab9o, {
-     Name = "Fake menu (Arceus)",
-    Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
-  end
-  })   
+  }}
+end  
 ----- Dropdown 
 
   Dropdown = AddDropdown(Tab2o, {
