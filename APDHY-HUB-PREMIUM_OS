@@ -1672,7 +1672,7 @@ function MakeWindow(Configs)
     AddButton(Tab1o, {
      Name = "FIX LAG",
     Callback = function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/huynhthienphat/Apdhy-Hub-Premeum/refs/heads/main/Turbo-Lite-APDHY"))()
   end
   })
      AddButton(Tab1o, {
