@@ -1699,9 +1699,11 @@ local Window = MakeWindow({
      AddButton(Tab9o, {
      Name = "YOUTUBE : apdhygamming (Nhấn Vào Để Lấy Link YT)",
     Callback = function()
-    Link = "https://www.youtube.com/@apdhygamming",
-    CopyLink = "Copied to Clipboard"
-  end
+    YoutubeLink = {
+    YoutubeLink = "https://www.youtube.com/@apdhygamming",
+    CopyYoutubeLink = "Copied to Clipboard"
+  }
+end
   }) 
      AddButton(Tab9o, {
      Name = "Fake menu (Arceus)",
