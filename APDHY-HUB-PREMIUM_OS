@@ -1658,72 +1658,56 @@ local Window = MakeWindow({
       
 ------ Tab
      local Tab1o = MakeTab({Name = "MAIN"})
-     local Tab2o = MakeTab({Name = "FARM LEVER"})
-     local Tab999o = MakeTab({Name = "Tối Thượng"})
-     
+     local Tab2o = MakeTab({Name = "Farm"})
+     local Tab3o = MakeTab({Name = "CÀI ĐẶT NÂNG CAO"})
+     local Tab4o = MakeTab({Name = "SCAMER"})
      
 -------TOGGLE 
 
      Toggle = AddToggle(Tab2o, {
-      Name = "FARM",
+      Name = "AUTO FARM",
       Default = false,
       Callback = function()
      end
     })
      Toggle = AddToggle(Tab2o, {
-      Name = "Tấn Công Nhanh",
+      Name = "Tấng Công nhanh",
       Default = true,
       Callback = function()
      end
     })
     
-    
 ------- BUTTON
     
     AddButton(Tab1o, {
-     Name = "FIX LAG",
+     Name = "FIX LAG (Turbo-Lite)",
     Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/huynhthienphat/Apdhy-Hub-Premeum/refs/heads/main/Turbo-Lite-APDHY"))()
+	   loadstring(game:HttpGet("https://raw.githubusercontent.com/huynhthienphat/Apdhy-Hub-Premeum/refs/heads/main/Turbo-Lite-APDHY"))()
   end
   })
------- CÀI ĐẶT BỔ SUNG
-     AddButton(Tab9o, {
-     Name = "NGƯỜI TẠO : APDHY",
+     AddButton(Tab4o, {
+     Name = "FAKE TRADE",
     Callback = function()
+	   loadstring(game:HttpGet("https://github.com/huynhthienphat/Apdhy-Hub-Premeum/raw/refs/heads/main/FAKE%20TRADE"))()
   end
-  })   
-     AddButton(Tab9o, {
-     Name = "Việt Hóa 100%",
-    Callback = function()
-  end
-  })   
-     AddButton(Tab9o, {
-     Name = "YOUTUBE : https://www.youtube.com/@apdhygamming",
-    Callback = function()
-  }}
-end  
------- Tối Thượng
-     AddButton(Tab999o, {
-     Name = "FAKE Trade (Siêu Tối Thượng)",
-    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/huynhthienphat/Apdhy-Hub-Premeum/refs/heads/main/FAKE%20TRADE"))()
-end
+  })
 ----- Dropdown 
 
   Dropdown = AddDropdown(Tab2o, {
-     Name = "Tốc Đáng",
-     Options = {"0.25 (cực dẻ bị ban)","0.5","0.75 (Mặc Định)","0.9","1.5", "2.0", "3.0", "3.5"},
-     Default = "0.75 (Mặc Định)",
+     Name = "Chọn Tốc độ Tấng Công nhanh",
+     Options = {"0.01 (99% Bị Ban) ", "0.3", "0.5", "0.75","0.8","1.5"},
+     Default = "Melee",
      Callback = function()
      end
    })
   Dropdown = AddDropdown(Tab2o, {
-     Name = "Chọn cái để cày cấp",
-     Options = {"Võ","Kiếm","Súng","Trái ác quỷ"},
-     Default = "Võ","Kiếm","Súng","Trái ác quỷ",
+     Name = "Chọn ",
+     Options = {"Võ","Kiếm","Súng","Trái Ác Quỷ"},
+     Default = "Võ","Kiếm","Súng","Trái Ác Quỷ"
      Callback = function()
      end
    })
+
 
 ----- Section 
    
@@ -1732,3 +1716,5 @@ end
 ----- Paragraph 
                     
    Paragraph = AddParagraph(Farm, {"a", ""})
+   
+   
