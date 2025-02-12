@@ -1629,18 +1629,18 @@ end
 local Window = MakeWindow({
          Hub = {
          Title = "APDHY HUB PREMIUM (VIP) | SDT:0845670409",
-         Animation = "Chào Mừng Vào Hack "
+         Animation = "APDHY HUB PREMIUM (VIP) | Đang Vào"
          },
         Key = {
         KeySystem = true,
-        Title = "Key System",
+        Title = "Key System (VERSON 2.0)",
         Description = "APDHY HUB PREMIUM (VIP) | SDT:0845670409",
         KeyLink = "apdhyshop.com/muakey",
         Keys = {"ADMINDEPTRAIT","FREE1DAY","Thienkim","PhatYeuKim"},
         Notifi = {
         Notifications = true,
         CorrectKey = "Running the Script",
-       Incorrectkey = "The key is incorrect",
+       Incorrectkey = "Key SAI ",
        CopyKeyLink = "Copied to Clipboard"
       }
     }
