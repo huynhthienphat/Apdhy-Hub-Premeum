@@ -1630,7 +1630,7 @@ end
 local Window = MakeWindow({
          Hub = {
          Title = "APDHY HUB PREMIUM (VIP) | SDT:0845670409",
-         Animation = "APDHY HUB PREMIUM (VIP) | Đang Vào"
+         Animation = "Đang Vào"
          },
         Key = {
         KeySystem = true,
