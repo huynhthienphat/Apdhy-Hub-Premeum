@@ -1626,10 +1626,14 @@ function MakeWindow(Configs)
   end
   return Menu
 end
+        Title = "Key System (VERSON 2.0)",
+        Description = "APDHY HUB PREMIUM (VIP) | SDT:0845670409",
+        KeyLink = "apdhyshop.com/muakey",
+        Keys = {"ADMINDEPTRAIT","FREE1DAY","Thienkim","PhatYeuKim"},
 
-local Window = MakeWindow({
+       local Window = MakeWindow({
          Hub = {
-         Title = "APDHY HUB PREMIUM (VIP) | SDT:0845670409",
+         Title = "Key System (VERSON 2.0)",
          Animation = "Đang Vào"
          },
         Key = {
@@ -1637,11 +1641,11 @@ local Window = MakeWindow({
         Title = "Key System (VERSON 2.0)",
         Description = "APDHY HUB PREMIUM (VIP) | SDT:0845670409",
         KeyLink = "apdhyshop.com/muakey",
-        Keys = {"ADMINDEPTRAIT","FREE1DAY","Thienkim","PhatYeuKim"},
+        Keys = {"ADMINDEPTRAIT","FREE1DAY","Thienkim","PhatYeuKim"}
         Notifi = {
         Notifications = true,
-        CorrectKey = "Running the Script",
-       Incorrectkey = "Key SAI",
+        CorrectKey = "Running the Script...",
+       Incorrectkey = "The key is incorrect",
        CopyKeyLink = "Copied to Clipboard"
       }
     }
@@ -1663,7 +1667,6 @@ local Window = MakeWindow({
      local Tab4o = MakeTab({Name = "SCAMER"})
      
 -------TOGGLE 
-
      Toggle = AddToggle(Tab2o, {
       Name = "AUTO FARM",
       Default = false,
@@ -1680,26 +1683,47 @@ local Window = MakeWindow({
 ------- BUTTON
     
     AddButton(Tab1o, {
-     Name = "FIX LAG (Turbo-Lite)",
+     Name = "FIX LAG",
     Callback = function()
-	   loadstring(game:HttpGet("https://raw.githubusercontent.com/huynhthienphat/Apdhy-Hub-Premeum/refs/heads/main/Turbo-Lite-APDHY"))()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
   end
   })
-     AddButton(Tab4o, {
-     Name = "FAKE TRADE",
+     AddButton(Tab1o, {
+     Name = "SCRIPT",
     Callback = function()
-	   loadstring(game:HttpGet("https://github.com/huynhthienphat/Apdhy-Hub-Premeum/raw/refs/heads/main/FAKE%20TRADE"))()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+  end
+  })   AddButton(Tab1o, {
+     Name = "2",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+  end
+  })   AddButton(Tab1o, {
+     Name = "3",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+  end
+  })   AddButton(Tab1o, {
+     Name = "4",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+  end
+  })   AddButton(Tab1o, {
+     Name = "FIX LAG",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
   end
   })
 ----- Dropdown 
 
-  Dropdown = AddDropdown(Tab2o, {
+   Dropdown = AddDropdown(Tab2o, {
      Name = "Chọn Tốc độ Tấng Công nhanh",
      Options = {"0.01 (99% Bị Ban) ", "0.3", "0.5", "0.75","0.8","1.5"},
      Default = "Melee",
      Callback = function()
      end
    })
+
   Dropdown = AddDropdown(Tab2o, {
      Name = "Chọn ",
      Options = {"Võ","Kiếm","Súng","Trái Ác Quỷ"},
@@ -1708,7 +1732,6 @@ local Window = MakeWindow({
      end
    })
 
-
 ----- Section 
    
    Section = AddSection(Tab1o, {"a"})          
@@ -1716,5 +1739,4 @@ local Window = MakeWindow({
 ----- Paragraph 
                     
    Paragraph = AddParagraph(Farm, {"a", ""})
-   
-   
+    
