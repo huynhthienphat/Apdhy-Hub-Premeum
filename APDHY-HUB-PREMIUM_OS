@@ -70,7 +70,7 @@ local function TextSetColor(instance)
 end
 
 local ScreenGui = Create("ScreenGui", CoreGui, {
-  Name = "APDHY HUB PREMIUM (VIP) | SDT:0845670409"
+  Name = "REDz HUB library"
 })
 
 ScreenFind = CoreGui:FindFirstChild(ScreenGui.Name)
@@ -101,7 +101,7 @@ local ListLayout = Create("UIListLayout", Menu_Notifi, {
 })
 
 function MakeNotifi(Configs)
-  local Title = Configs.Title or "APDHY HUB PREMIUM (VIP) | SDT:0845670409"
+  local Title = Configs.Title or "REDz HUB"
   local text = Configs.Text or "Notificação"
   local timewait = Configs.Time or 5
   
@@ -189,8 +189,8 @@ function MakeNotifi(Configs)
 end
 
 function MakeWindow(Configs)
-  local title = Configs.Hub.Title or "APDHY HUB PREMIUM (VIP) | SDT:0845670409"
-  local Anim_Title = Configs.Hub.Animation or "by : APDHYGAMMING"
+  local title = Configs.Hub.Title or "REDz HUB"
+  local Anim_Title = Configs.Hub.Animation or "by : redz9999"
   
   local KeySystem = Configs.Key.KeySystem or false
   local KeyTitle = Configs.Key.Title or "Key System"
@@ -1621,13 +1621,12 @@ function MakeWindow(Configs)
         JoinButton.Text = "Join"
         JoinButton.BackgroundColor3 = Color3.fromRGB(50, 200, 50)
         JoinButton.TextColor3 = Color3.fromRGB(220, 220, 220)
-
       end
     end)
   end
   return Menu
 end
-       local Window = MakeWindow({
+local Window = MakeWindow({
          Hub = {
          Title = "APDHY HUB PREMIUM (VIP) | SDT:0845670409",
          Animation = "2001"
