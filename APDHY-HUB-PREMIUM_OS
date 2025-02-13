@@ -1701,6 +1701,4 @@ end
 
 ----- Paragraph 
                     
-   Paragraph = AddParagraph(Farm, {"a", ""})
-   
-   
+   Paragraph = AddParagraph(Farm, {"a", ""}
